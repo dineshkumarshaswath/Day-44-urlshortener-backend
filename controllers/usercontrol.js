@@ -89,7 +89,7 @@ exports.loginUser=async(req,res)=>{
       const resetToken = user.getResetToken();
       await user.save({validateBeforeSave:false})
       
-      const resetUrl = `https://fogot-password-task.netlify.app/reset/password/${resetToken}`;
+      const resetUrl = `https://url-short-task.netlify.app/reset/password/${resetToken}`;
 //send the reseturl
 
       const message = `Your password reset url is as follows \n\n 
